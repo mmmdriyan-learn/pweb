@@ -10,20 +10,17 @@ class pweb extends CI_Controller {
 
 	public function index()
 	{
-
-		// if($this->session->userdata('login') == '1'){
-        //     $data['barang'] = $this->M_pweb->read();
-        //     $this->load->view('header', $data);
-        //     $this->load->view('home');
-        //     $this->load->view('footer');
-        // } else {
-        //     $this->session->set_flashdata('belum_login','1');
-        //     redirect('pweb/login', 'refresh');
-		// }
+        // echo password_hash('praktikum', PASSWORD_DEFAULT);
+        // die;
+		if($this->session->userdata('login') == '1'){
             $data['barang'] = $this->M_pweb->read();
             $this->load->view('header', $data);
             $this->load->view('home');
             $this->load->view('footer');
+        } else {
+            $this->session->set_flashdata('belum_login','1');
+            redirect('pweb/login', 'refresh');
+		}
 	}
 
 	public function logout(){
