@@ -13,10 +13,3 @@
     <p>Menggunakan PHP versi 5.4</p>
 </div>
 <br>
-
-<div>
-    - `User Guide Codeigniter <https://codeigniter.com/docs>`\_
-    - `Community Forums <http://forum.codeigniter.com/>`\_
-    - `Community Slack Channel <https://codeigniterchat.slack.com>`\_
-    - `Bootstrap Framework <https://getbootstrap.com/docs/4.6>`\_
-</div>
